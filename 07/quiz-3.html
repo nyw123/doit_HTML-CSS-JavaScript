@@ -4,10 +4,26 @@
 	<meta charset="utf-8">
 	<title>표 스타일</title>
 </head>
+<style>
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  caption {
+    caption-side:bottom;      
+  }    
+  .heading{
+    background-color: #eee;
+  }
+  td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+</style>
 <body>
-  <table border="1">
+  <table>
     <caption>2019 국민 독서실태</caption>
-    <thead>
+    <thead class="heading">
       <tr>
         <th>구분</th>
         <th>성인</th>
@@ -16,17 +32,17 @@
     </thead>
     <tbody>
       <tr>
-        <th>종이책</th>
+        <th class="heading">종이책</th>
         <td>6.1권</td>
         <td>11.8권</td>
       </tr>
       <tr>
-        <th>전자책</th>
+        <th class="heading">전자책</th>
         <td>1.2권</td>
         <td>7.1권</td>
       </tr>
       <tr>
-        <th>오디오북</th>
+        <th class="heading">오디오북</th>
         <td>0.2권</td>
         <td>5.5권</td>
       </tr>      
