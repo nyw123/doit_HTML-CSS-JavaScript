@@ -9,9 +9,32 @@
 			font-size:1.2em;
 			text-align:center;
 		}
+		p{
+			color: red;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var n = prompt("숫자를 입력하세요.");
+		var msg = "";
+		var msg2 = "";
+		var cnt = 0;
+		if(n !== null) {
+			for(i = 1; i < n; i++) {
+				if(i%3 == 0){
+					document.write(i+", ");
+					cnt += 1;
+				}
+		}
+		}
+		else
+			msg = "값을 입력하지 않았습니다.";
+		msg2 = "50까지 3의배수 갯수 " + cnt;
+		document.write(msg);
+		document.write("<p>" + msg2 + "</h3>");
+	</script>
 </body>
 </html>
