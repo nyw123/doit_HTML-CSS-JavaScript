@@ -14,7 +14,6 @@
       font-size:1.5em; 
       font-weight:bold;
       color:blue;
-      /* text-align:center; */
     }
   </style>
 </head>
@@ -24,7 +23,8 @@
     setInterval(displayNow, 1000);  // 1초마다 시간 계산 함수 실행
 
     function displayNow() {  // 시간 계산 함수
-      
+      var now = new Date();
+		  var currentTime = now.toLocaleTimeString();
 
       document.querySelector("#current").innerHTML = currentTime;   // id="current" 인 요소에 현재 시간 표시
     }
