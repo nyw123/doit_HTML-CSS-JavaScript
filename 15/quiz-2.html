@@ -7,6 +7,23 @@
 	<title>연습문제 2</title>
 </head>
 <body>
+	<script>
+		n1 = prompt("숫자1 입력.");
+		n2 = prompt("숫자2 입력.");
+
+		function free(n1,n2){
+			if(n1===n2){
+				return msg = "두 수가 같습니다."
+			}else if(n1>n2){
+				return msg = n1 + "이"+ n2+"보다 큽니다."
+			}
+			else
+				return msg = n2 + "이"+ n1+ "보다 큽니다."
+			
+		}
+		document.write(free(n1,n2));
+	</script>
+	
 	
 </body>
 </html>
