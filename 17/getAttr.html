@@ -53,6 +53,14 @@
 			var cup = document.querySelector("#cup");
 			alert("이미지 소스 : " + cup.getAttribute("src"));
 		}	
+		var smallPic = document.querySelectorAll(".small")
+		for(let i=0; i<smallPic.length; i++){
+			smallPic[i].addEventListener("click",changePic);
+		}
+		function changePic(){
+			var newPic = this.src
+			cup.setAttribute("src",newPic);
+		}
 	</script>
 </body>
 </html>
