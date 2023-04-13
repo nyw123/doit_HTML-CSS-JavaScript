@@ -90,7 +90,7 @@ nav{
 }
 #topMenu > li:hover > ul {
   display: block;  /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
-  z-index:10;  /* 슬라이드 쇼에 가리지 않게 조절 */ 
+  z-index: 10; /* 음수로바꾸면 그림 뒤로 가려짐 */
 }
 #topMenu > li > ul > li > a:hover {
   color:#f00;  /* 서브 메뉴 마우스 오버하면 색상 바뀜 */   
